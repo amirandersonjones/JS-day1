@@ -7,15 +7,16 @@ the list and checks that the current name is in the string passed in. The output
  let dog_names = ["Max","HAS","PuRple","dog"]
  
  function findWords(str, names){
-    //Your code goes here
-//         //conditional
-        if (str.includes(names[i])){
-            return 'matched dog_name'
-         }
-         return 'no matches'
-     }
- };
- console.log(findWords(dog_string, dog_names));
+        for(let i = 0; i<names.length; i++){
+            if (str.includes(names[i])){
+                return 'matched dog_name'
+            }
+
+        }
+        return 'no matches'
+    };
+
+    (findWords(dog_string, dog_names));
 // //Call method here with parameters
 
 //============Exercise #2 ============//
